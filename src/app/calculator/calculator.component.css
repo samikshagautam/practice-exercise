@@ -1,0 +1,14 @@
+.row {
+  padding: 20px;
+  background-color: skyblue;
+  border: 1px solid dodgerblue;
+}
+
+p {
+  color: saddlebrown;
+}
+
+.mb-3 .form-label {
+  text-anchor: middle;
+  color: saddlebrown;
+}
