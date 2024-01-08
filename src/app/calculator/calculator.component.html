@@ -1,29 +1,47 @@
 <div class="container">
-  <div class="row mb-3 justify-content-center">
-      <div class="col-md-6 input-section">
-        <p class="p">Enter number1 and number2: </p>
-        <input type="number" class="form-control form-control-sm  number-input" [(ngModel)]="num1" placeholder="Enter number 1">
-        <input type="number" class="form-control form-control-sm number-input" [(ngModel)]="num2" placeholder="Enter number 2">
+  <div class="row">
+    <div class="col-md-6 offset-3 input-section">
+
+      <div class="form-group mb-3">
+        <label for="num1">Number1:</label>
+        <input type="number" class="form-control" id="num1" [(ngModel)]="num1" placeholder="Enter number 1">
       </div>
-    <div class="col-md-6 input-section">
-      <div class="mb-3 result-section">
-        <label for="result" class="form-label">Result:</label>
-        <input type="text" class="form-control form-control-sm result-input" id="result" [value]="result">
+      <div class="form-group mb-3">
+        <label for="num2">Number2:</label>
+        <input type="number" class="form-control" id="num2" [(ngModel)]="num2" placeholder="Enter number 2">
       </div>
-    </div>
-    <div>
-      <button class="btn btn-sm btn-primary" (click)="calculation('+')">
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <button class="btn btn-sm btn-primary" (click)="calculation('-')">
-        <i class="bi bi-dash-lg"></i>
-      </button>
-      <button class="btn btn-sm btn-primary" (click)="calculation('*')">
-        <i class="bi bi-x-lg"></i>
-      </button>
-      <button class="btn btn-sm btn-primary" (click)="calculation('/')">
-        <i class="bi bi-slash-lg"></i>
-      </button>
+
+      <div class="form-group mb-3">
+          <label class="form-label">Result:</label>
+          {{ result }}
+      </div>
+
+
+      <ul class="list list-inline">
+        <li class="list-inline-item">
+        <button class="btn btn-sm btn-primary" (click)="calculation('+')">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        </li>
+        <li class="list-inline-item">
+        <button class="btn btn-sm btn-primary" (click)="calculation('-')">
+          <i class="bi bi-dash-lg"></i>
+        </button>
+        </li>
+        <li class="list-inline-item">
+        <button class="btn btn-sm btn-primary" (click)="calculation('*')">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        </li>
+        <li class="list-inline-item">
+        <button class="btn btn-sm btn-primary" (click)="calculation('/')">
+          <i class="bi bi-slash-lg"></i>
+        </button>
+        </li>
+      </ul>
+
+
     </div>
   </div>
+
 </div>

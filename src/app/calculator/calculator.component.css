@@ -1,7 +1,7 @@
-.row {
+.col-md-6 {
   padding: 20px;
-  background-color: skyblue;
-  border: 1px solid dodgerblue;
+  background-color: linen;
+  border: 1px solid linen;
 }
 
 p {
